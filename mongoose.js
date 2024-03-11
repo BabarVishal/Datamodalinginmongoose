@@ -10,6 +10,10 @@ import mongoose from "mongoose";
        createdBy:{
         type: mongoose.Schema.type.objectID,
         ref: "todo"
+       },
+       subtodo : {
+        type: mongoose.schema.type.objectID,
+        ref: "sub"
        }
    }, {timestamps:true}
  );
